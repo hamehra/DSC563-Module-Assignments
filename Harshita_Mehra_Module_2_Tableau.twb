@@ -1,0 +1,403 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0912.1023                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='73aed6f4fce4c9e6df51715ef249911b00687d38ac9e83b1c132edde568c6fee' _.fcp.WorkbookFingerprinting.true...creator-author-id='73aed6f4fce4c9e6df51715ef249911b00687d38ac9e83b1c132edde568c6fee' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='73aed6f4fce4c9e6df51715ef249911b00687d38ac9e83b1c132edde568c6fee' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='73aed6f4fce4c9e6df51715ef249911b00687d38ac9e83b1c132edde568c6fee' original-version='18.1' source-build='2026.2.3 (20262.26.0912.1023)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='tableau_workshops_tidy' inline='true' name='federated.18hbyb10u8cnep11dvznl1ddcmgm' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_workshops_tidy' name='textscan.0oi4zvt0je0emx11xhkmy0rngcmh'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/harsh/Downloads/tableau_workshops_tidy.csv' dataRefreshTime='' directory='C:/Users/harsh/Downloads' filename='C:/Users/harsh/AppData/Local/Temp/TableauTemp/0013lb5068lnwf1fxnjht0omt53w/tableau_workshops_tidy.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0oi4zvt0je0emx11xhkmy0rngcmh' name='tableau_workshops_tidy.csv' table='[tableau_workshops_tidy#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:D25:no:A1:D25:1' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='month' ordinal='0' />
+            <column datatype='string' name='neighborhood' ordinal='1' />
+            <column datatype='integer' name='capacity_seats' ordinal='2' />
+            <column datatype='integer' name='attendance_visits' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_workshops_tidy.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D25:no:A1:D25:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>71</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[tableau_workshops_tidy.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[tableau_workshops_tidy.csv_08CF71B80DF84DB08841E91910717241]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>neighborhood</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[neighborhood]</local-name>
+            <parent-name>[tableau_workshops_tidy.csv]</parent-name>
+            <remote-alias>neighborhood</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[tableau_workshops_tidy.csv_08CF71B80DF84DB08841E91910717241]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>capacity_seats</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[capacity_seats]</local-name>
+            <parent-name>[tableau_workshops_tidy.csv]</parent-name>
+            <remote-alias>capacity_seats</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[tableau_workshops_tidy.csv_08CF71B80DF84DB08841E91910717241]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>attendance_visits</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[attendance_visits]</local-name>
+            <parent-name>[tableau_workshops_tidy.csv]</parent-name>
+            <remote-alias>attendance_visits</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[tableau_workshops_tidy.csv_08CF71B80DF84DB08841E91910717241]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='tableau_workshops_tidy.csv' datatype='table' name='[__tableau_internal_object_id__].[tableau_workshops_tidy.csv_08CF71B80DF84DB08841E91910717241]' role='measure' type='quantitative' />
+      <column caption='Attendance Visits' datatype='integer' name='[attendance_visits]' role='measure' type='quantitative' />
+      <column caption='Capacity Seats' datatype='integer' name='[capacity_seats]' role='measure' type='quantitative' />
+      <column caption='Month' datatype='date' name='[month]' role='dimension' type='ordinal' />
+      <column caption='Neighborhood' datatype='string' name='[neighborhood]' role='dimension' type='nominal' />
+      <column-instance column='[__tableau_internal_object_id__].[tableau_workshops_tidy.csv_08CF71B80DF84DB08841E91910717241]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:tableau_workshops_tidy.csv_08CF71B80DF84DB08841E91910717241:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[attendance_visits]' derivation='Sum' name='[sum:attendance_visits:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[capacity_seats]' derivation='Sum' name='[sum:capacity_seats:qk]' pivot='key' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/harsh/AppData/Local/Temp/TableauTemp/#TableauTemp_1qmnmkn071o3d913qlova1dmq69y.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/30/2026 04:38:32 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>month</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>month</remote-alias>
+              <ordinal>0</ordinal>
+              <family>tableau_workshops_tidy.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_workshops_tidy.csv_08CF71B80DF84DB08841E91910717241]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>neighborhood</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[neighborhood]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>neighborhood</remote-alias>
+              <ordinal>1</ordinal>
+              <family>tableau_workshops_tidy.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[tableau_workshops_tidy.csv_08CF71B80DF84DB08841E91910717241]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>capacity_seats</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[capacity_seats]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>capacity_seats</remote-alias>
+              <ordinal>2</ordinal>
+              <family>tableau_workshops_tidy.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_workshops_tidy.csv_08CF71B80DF84DB08841E91910717241]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>attendance_visits</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[attendance_visits]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>attendance_visits</remote-alias>
+              <ordinal>3</ordinal>
+              <family>tableau_workshops_tidy.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_workshops_tidy.csv_08CF71B80DF84DB08841E91910717241]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='24' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.18hbyb10u8cnep11dvznl1ddcmgm].[sum:attendance_visits:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.18hbyb10u8cnep11dvznl1ddcmgm].[__tableau_internal_object_id__].[cnt:tableau_workshops_tidy.csv_08CF71B80DF84DB08841E91910717241:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.18hbyb10u8cnep11dvznl1ddcmgm].[sum:capacity_seats:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.18hbyb10u8cnep11dvznl1ddcmgm]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.18hbyb10u8cnep11dvznl1ddcmgm].[sum:attendance_visits:qk]:1&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='tableau_workshops_tidy.csv' id='tableau_workshops_tidy.csv_08CF71B80DF84DB08841E91910717241'>
+            <properties context=''>
+              <relation connection='textscan.0oi4zvt0je0emx11xhkmy0rngcmh' name='tableau_workshops_tidy.csv' table='[tableau_workshops_tidy#csv$]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:D25:no:A1:D25:1' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='month' ordinal='0' />
+                  <column datatype='string' name='neighborhood' ordinal='1' />
+                  <column datatype='integer' name='capacity_seats' ordinal='2' />
+                  <column datatype='integer' name='attendance_visits' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Segoe UI'>Attendance Visits by Neighborhood — October 2026</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_workshops_tidy' name='federated.18hbyb10u8cnep11dvznl1ddcmgm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.18hbyb10u8cnep11dvznl1ddcmgm'>
+            <column caption='Attendance Visits' datatype='integer' name='[attendance_visits]' role='measure' type='quantitative' />
+            <column caption='Month' datatype='date' name='[month]' role='dimension' type='ordinal' />
+            <column-instance column='[month]' derivation='MY' name='[my:month:ok]' pivot='key' type='ordinal' />
+            <column caption='Neighborhood' datatype='string' name='[neighborhood]' role='dimension' type='nominal' />
+            <column-instance column='[neighborhood]' derivation='None' name='[none:neighborhood:nk]' pivot='key' type='nominal' />
+            <column-instance column='[attendance_visits]' derivation='Sum' name='[sum:attendance_visits:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.18hbyb10u8cnep11dvznl1ddcmgm].[my:month:ok]'>
+            <groupfilter function='member' level='[my:month:ok]' member='202610' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.18hbyb10u8cnep11dvznl1ddcmgm].[none:neighborhood:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;South&quot;</bucket>
+              <bucket>&quot;North&quot;</bucket>
+              <bucket>&quot;West&quot;</bucket>
+              <bucket>&quot;East&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.18hbyb10u8cnep11dvznl1ddcmgm].[my:month:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.18hbyb10u8cnep11dvznl1ddcmgm].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.18hbyb10u8cnep11dvznl1ddcmgm].[none:neighborhood:nk]</rows>
+        <cols>[federated.18hbyb10u8cnep11dvznl1ddcmgm].[sum:attendance_visits:qk]</cols>
+      </table>
+      <simple-id uuid='{A7F12A3B-282B-4F0E-980E-F1690FCF61D5}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.18hbyb10u8cnep11dvznl1ddcmgm].[my:month:ok]' type='filter' />
+            <card pane-specification-id='4' param='[federated.18hbyb10u8cnep11dvznl1ddcmgm].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.18hbyb10u8cnep11dvznl1ddcmgm].[:Measure Names]</field>
+            <field>[federated.18hbyb10u8cnep11dvznl1ddcmgm].[my:month:ok]</field>
+            <field>[federated.18hbyb10u8cnep11dvznl1ddcmgm].[none:neighborhood:nk]</field>
+            <field>[federated.18hbyb10u8cnep11dvznl1ddcmgm].[yr:month:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F419A1CD-6ACD-458B-B7C8-ABDF8BB97E34}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='159' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
